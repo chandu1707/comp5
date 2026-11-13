@@ -10,11 +10,11 @@ pipeline {
             }
         }
 
-        stage('Install') {
-            steps {
-                bat 'python -m pip install -r requirements.txt'
-            }
-        }
+      stage('Install') {
+    steps {
+        bat '"C:\\Users\\atmak\\AppData\\Local\\Programs\\Python\\Python37\\python.exe" -m pip install -r requirements.txt'
+    }
+}
 
         stage('Compile') {
             steps {
