@@ -16,17 +16,17 @@ pipeline {
     }
 }
 
-        stage('Compile') {
-            steps {
-                bat 'python -m compileall app.py'
-            }
-        }
+     stage('Compile') {
+    steps {
+        bat '"C:\\Users\\atmak\\AppData\\Local\\Programs\\Python\\Python37\\python.exe" -m compileall app.py'
+    }
+}
 
-        stage('Test') {
-            steps {
-                bat 'python -m pytest -v'
-            }
-        }
+     stage('Test') {
+    steps {
+        bat '"C:\\Users\\atmak\\AppData\\Local\\Programs\\Python\\Python37\\python.exe" -m pytest -v'
+    }
+}
 
         stage('Package') {
             steps {
