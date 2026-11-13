@@ -28,10 +28,10 @@ pipeline {
     }
 }
 
-        stage('Package') {
-            steps {
-                bat 'python -m zipfile -c app.zip app.py test_app.py requirements.txt'
-            }
-        }
+       stage('Package') {
+    steps {
+        bat '"C:\\Users\\atmak\\AppData\\Local\\Programs\\Python\\Python37\\python.exe" -m zipfile -c app.zip app.py test_app.py requirements.txt'
+    }
+}
     }
 }
